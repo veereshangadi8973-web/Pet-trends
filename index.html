@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#ff7a1a">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>Pet Trends – Pet Store in Harihar</title>
+<meta name="description" content="Pet Trends, Harihar: pet food, toys, accessories and grooming supplies with home delivery. Call or WhatsApp 085500 87999.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"PetStore","name":"Pet Trends","telephone":"+91 85500 87999","address":{"@type":"PostalAddress","streetAddress":"Davangere - Harihar Rd, opposite Thuljabhavani Petrol Pump, near VRL","addressLocality":"Harihar","addressRegion":"Karnataka","postalCode":"577601","addressCountry":"IN"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"4"}}</script>
+<style>
+:root{--bg:#fff8ee;--ink:#1f2d3a;--muted:#5d6b76;--card:#fff;--line:#f3e2c8;--o:#ff7a1a;--o2:#ffb03a;--t:#0e9aa0;--p:#ff5c8a;--soft:#ffeccf;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171f24;--ink:#f7efe4;--muted:#b6c2c8;--card:#222d33;--line:#33424a;--soft:#2c3a3c}}
+:root[data-theme="dark"]{--bg:#171f24;--ink:#f7efe4;--muted:#b6c2c8;--card:#222d33;--line:#33424a;--soft:#2c3a3c}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Nunito,system-ui,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:"Baloo 2","Trebuchet MS",sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+section{padding:40px 0}
+h2{font-size:clamp(1.8rem,5vw,2.4rem);margin-bottom:6px}
+.sub{color:var(--muted);margin:0 0 22px}
+
+/* hero */
+.hero{background:linear-gradient(135deg,#ff7a1a 0%,#ff9d2e 55%,#ffc24a 100%);color:#fff;padding:36px 0 110px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:70px;background:var(--bg);clip-path:ellipse(75% 100% at 50% 100%)}
+.blob{position:absolute;border-radius:50%;background:rgba(255,255,255,.14)}
+.b1{width:260px;height:260px;right:-70px;top:-60px}
+.b2{width:150px;height:150px;left:-50px;bottom:40px}
+.nav{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2;margin-bottom:34px}
+.logo{font-family:"Baloo 2";font-weight:800;font-size:1.4rem;display:flex;align-items:center;gap:8px}
+.logo i{font-style:normal;background:#fff;border-radius:50%;width:38px;height:38px;display:grid;place-items:center}
+.pill{background:rgba(255,255,255,.25);padding:6px 14px;border-radius:999px;font-weight:700;font-size:.9rem}
+.heroGrid{display:grid;gap:20px;grid-template-columns:1.2fr .8fr;align-items:center;position:relative;z-index:2}
+.hero h1{font-size:clamp(2.8rem,10vw,5rem);font-weight:800;letter-spacing:-.5px;text-shadow:0 3px 0 rgba(0,0,0,.12);animation:pop .8s cubic-bezier(.2,1.4,.4,1) both}
+.hero p{font-size:1.2rem;margin:12px 0 24px;max-width:28ch;font-weight:600}
+.pets{position:relative;height:210px}
+.pets span{position:absolute;font-size:5.4rem;filter:drop-shadow(0 8px 6px rgba(0,0,0,.18));animation:bob 3.2s ease-in-out infinite}
+.pets .a{left:0;top:30px}.pets .b{right:10px;top:0;animation-delay:.6s;font-size:4.6rem}.pets .c{left:35%;bottom:-6px;animation-delay:1.2s;font-size:3.6rem}
+@keyframes bob{50%{transform:translateY(-12px) rotate(4deg)}}
+@keyframes pop{from{transform:scale(.7) translateY(20px);opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:800;font-size:1.05rem;text-decoration:none;min-height:50px;box-shadow:0 6px 0 rgba(0,0,0,.16);transition:transform .15s}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 rgba(0,0,0,.16)}
+.call{background:#fff;color:#b8500a}.wa{background:#0b6f73;color:#fff}
+a:focus-visible,.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+
+/* ribbon */
+.ribbon{background:var(--ink);color:var(--bg);overflow:hidden;white-space:nowrap;padding:10px 0;font-weight:800;transform:rotate(-1.2deg);margin:0 -10px}
+.ribbon div{display:inline-block;animation:slide 22s linear infinite}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* products */
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}
+.card{border-radius:28px;padding:22px;color:#fff;position:relative;overflow:hidden;min-height:170px;transition:transform .2s}
+.card:hover{transform:translateY(-6px) rotate(-1deg)}
+.card .ic{font-size:3rem;display:block;margin-bottom:6px}
+.card h3{font-size:1.35rem}.card p{margin:4px 0 0;opacity:.95}
+.card:after{content:"🐾";position:absolute;right:-8px;bottom:-14px;font-size:5rem;opacity:.15}
+.c1{background:linear-gradient(135deg,#ff7a1a,#ffa63a)}
+.c2{background:linear-gradient(135deg,#0e9aa0,#39c2b8)}
+.c3{background:linear-gradient(135deg,#ff5c8a,#ff8e6e)}
+.c4{background:linear-gradient(135deg,#6a5cf0,#8f86ff)}
+
+/* why */
+.why{background:var(--soft);border-radius:36px;padding:30px 24px;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.why h2{grid-column:1/-1}
+.f{background:var(--card);border-radius:22px;padding:16px 18px;display:flex;gap:12px;align-items:center;font-weight:700;border:2px solid var(--line)}
+.f b{font-size:1.8rem}
+.rate{display:flex;align-items:center;gap:14px;background:var(--card);border-radius:28px;padding:18px 22px;margin-top:18px;border:2px solid var(--line)}
+.rate big{font-family:"Baloo 2";font-size:3.2rem;font-weight:800;color:var(--o);line-height:1}
+.stars{color:var(--o2);letter-spacing:3px;font-size:1.2rem}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.gal div{aspect-ratio:1;border-radius:24px;display:grid;place-items:center;font-size:clamp(2.4rem,9vw,4rem)}
+.gal div:nth-child(1){background:#ffe0c2}.gal div:nth-child(2){background:#cdf1ef}.gal div:nth-child(3){background:#ffd3e0}
+.gal div:nth-child(4){background:#dcd8ff}.gal div:nth-child(5){background:#fff0b8}.gal div:nth-child(6){background:#d5f2c9}
+.gal div:nth-child(1),.gal div:nth-child(6){grid-column:span 1}
+@media (prefers-color-scheme:dark){.gal div{filter:brightness(.85)}}
+.note{color:var(--muted);font-size:.9rem;margin-top:10px}
+
+/* reviews */
+.rev{background:var(--card);border:2px solid var(--line);border-radius:28px 28px 28px 6px;padding:20px}
+.rev p{margin:8px 0 10px;font-weight:600}.rev b{color:var(--t)}
+
+/* visit */
+.visit{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.info{background:var(--card);border:2px solid var(--line);border-radius:28px;padding:22px}
+.info p{margin:0 0 14px}.info a{color:var(--t);font-weight:800}
+.map{display:grid;place-items:center;text-align:center;border-radius:28px;min-height:230px;background:linear-gradient(135deg,#0e9aa0,#39c2b8);color:#fff;text-decoration:none;font-family:"Baloo 2";font-size:1.5rem;font-weight:800;padding:20px}
+.map span{display:block;font-size:3rem}
+.hrs{width:100%;border-collapse:collapse;margin:-8px 0 8px;font-size:.95rem}
+.hrs td{padding:6px 0;border-bottom:1px dashed var(--line)}
+.hrs td:first-child{font-weight:800;width:44px}
+footer{background:var(--ink);color:var(--bg);text-align:center;padding:28px 0 36px;border-radius:36px 36px 0 0;margin-top:20px}
+footer a{color:inherit}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;font-size:1.9rem;text-decoration:none;box-shadow:0 8px 18px rgba(0,0,0,.3);z-index:9}
+@media (max-width:640px){.heroGrid{grid-template-columns:1fr}.pets{height:150px}.pets span{font-size:4rem!important}.hero{padding-bottom:90px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap">
+    <div class="nav"><div class="logo"><i>🐾</i>Pet Trends</div><span class="pill">★ 4.8 on Google</span></div>
+    <div class="heroGrid">
+      <div>
+        <h1>Happy pets,<br>happy home.</h1>
+        <p>Everything your pet needs, in Harihar. Delivered to your door.</p>
+        <div class="btns">
+          <a class="btn call" href="tel:+918550087999">📞 Call now</a>
+          <a class="btn wa" href="https://wa.me/918550087999?text=Hi%20Pet%20Trends%2C%20I%20need%20help%20with%20pet%20supplies">💬 WhatsApp us</a>
+        </div>
+      </div>
+      <div class="pets" aria-hidden="true"><span class="a">🐶</span><span class="b">🐱</span><span class="c">🦴</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="ribbon" aria-hidden="true"><div>🐶 Pet food &nbsp;•&nbsp; 🎾 Toys &nbsp;•&nbsp; 🦮 Accessories &nbsp;•&nbsp; 🛁 Grooming &nbsp;•&nbsp; 🚚 Home delivery &nbsp;•&nbsp; 🐶 Pet food &nbsp;•&nbsp; 🎾 Toys &nbsp;•&nbsp; 🦮 Accessories &nbsp;•&nbsp; 🛁 Grooming &nbsp;•&nbsp; 🚚 Home delivery &nbsp;•&nbsp;</div></div>
+
+<main class="wrap">
+  <section>
+    <h2>Shop for your pet</h2>
+    <p class="sub">Tap Call or WhatsApp to ask about what's in stock.</p>
+    <div class="grid">
+      <div class="card c1"><span class="ic">🦴</span><h3>Pet food</h3><p>Dry and wet food for dogs and cats.</p></div>
+      <div class="card c2"><span class="ic">🎾</span><h3>Toys</h3><p>Chew toys, balls and play gear.</p></div>
+      <div class="card c3"><span class="ic">🦮</span><h3>Accessories</h3><p>Collars, leashes, beds and bowls.</p></div>
+      <div class="card c4"><span class="ic">🛁</span><h3>Grooming</h3><p>Shampoos, brushes and hygiene care.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="why">
+      <h2>Why pet owners love us</h2>
+      <div class="f"><b>🚚</b>Home delivery</div>
+      <div class="f"><b>🤝</b>Friendly local advice</div>
+      <div class="f"><b>📍</b>On Davangere–Harihar Road</div>
+      <div class="f"><b>💬</b>Quick replies on WhatsApp</div>
+    </div>
+    <div class="rate"><big>4.8</big><div><div class="stars">★★★★★</div>Google rating from happy customers</div></div>
+  </section>
+
+  <section>
+    <h2>Our little world</h2>
+    <p class="sub">Photos of the shop and our favourite customers.</p>
+    <div class="gal" aria-hidden="true"><div>🐶</div><div>🐱</div><div>🐰</div><div>🐦</div><div>🐠</div><div>🐹</div></div>
+    <p class="note">Placeholder icons. Replace with real shop photos.</p>
+  </section>
+
+  <section>
+    <h2>What customers say</h2>
+    <p class="sub">&nbsp;</p>
+    <div class="grid">
+      <div class="rev"><div class="stars">★★★★★</div><p>Good range of pet food and accessories at fair prices.</p><b>Customer</b></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>Helpful staff and quick delivery.</p><b>Customer</b></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>Easy to find and always has what my dog needs.</p><b>Customer</b></div>
+    </div>
+    <p class="note">Sample text. Replace with real Google reviews.</p>
+  </section>
+
+  <section>
+    <h2>Visit us</h2>
+    <p class="sub">Pop in, or call and we'll deliver.</p>
+    <div class="visit">
+      <div class="info">
+        <p><b>📍 Address</b><br>Davangere - Harihar Rd, opposite Thuljabhavani Petrol Pump, near VRL, Harihar, Karnataka 577601</p>
+        <p><b>🕗 Hours</b></p>
+        <table class="hrs">
+          <tr><td>Mon</td><td>10:30 am – 12 am</td></tr>
+          <tr><td>Tue</td><td>12 – 8:30 am, 10:30 am – 12 am</td></tr>
+          <tr><td>Wed</td><td>12 – 8:30 am, 10:30 am – 12 am</td></tr>
+          <tr><td>Thu</td><td>12 – 8:30 am, 10:30 am – 12 am</td></tr>
+          <tr><td>Fri</td><td>12 – 8:30 am, 10:30 am – 12 am</td></tr>
+          <tr><td>Sat</td><td>12 – 8:30 am, 10:30 am – 12 am</td></tr>
+          <tr><td>Sun</td><td>12 – 8:30 am</td></tr>
+        </table>
+        <p class="note">Call to confirm before you visit.</p>
+        <p><b>📞 Phone / WhatsApp</b><br><a href="tel:+918550087999">085500 87999</a></p>
+      </div>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=Pet+Trends+Harihar+Karnataka" target="_blank" rel="noopener"><div><span>🗺️</span>Open in Google Maps</div></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><strong style="font-family:'Baloo 2';font-size:1.3rem">🐾 Pet Trends</strong><br>Harihar, Karnataka · <a href="tel:+918550087999">085500 87999</a></div>
+</footer>
+<a class="fab" href="https://wa.me/918550087999" aria-label="Chat on WhatsApp">💬</a>
+<script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
+</body>
+</html>
